@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de cadastro de usuários</title>
+</head>
+<body>
+<h1>Cadastro de Usuários</h1>
+
+<div class="form">
+    <input type="hidden" id="indice">
+    <input type="text" id="cpf" placeholder="CPF">
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="date" id="nascimento">
+    <input type="email" id="email" placeholder="Email">
+<br>
+    <button onclick="salvarUsuario()">Salvar</button>
+    <button onclick="limparCampos()">Limpar</button>
+</div>
+    <div class="form">
+        <input type="text" id="pesquisa" placeholder="Pesquisar pelo nome">
+        <button onclick="pesquisar()">Pesquisar</button>
+        <button onclick="listarUsuarios()">Listar Todos</button>
+    </div>
+<table>
+<thead>
+    <tr>
+        <th>CPF</th>
+        <th>Nome</th>
+        <th>Data Nascimento</th>
+        <th>Email</th>
+        <th>Ações</th>
+    </tr>
+</thead>
+<tbody id="tabelaUsuarios">
+</tbody>
+</table>
+</body>
+    <script src="aula10.js"></script>
+</html>
